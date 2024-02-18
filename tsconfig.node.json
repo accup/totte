@@ -1,0 +1,37 @@
+// see: https://www.typescriptlang.org/tsconfig
+{
+  "compilerOptions": {
+    // Type Checking
+
+    "allowSyntheticDefaultImports": true,
+
+    // Modules
+
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+
+    // Emit
+
+    // JavaScript Support
+
+    // Editor Support
+
+    // Interop Constraints
+
+    // Backwards Compatibility
+
+    // Language and Environment
+
+    // Compiler Diagnostics
+
+    // Projects
+
+    "composite": true
+
+    // Output Formatting
+
+    // Completeness
+  },
+  "include": ["vite.config.ts"]
+}

@@ -1,0 +1,63 @@
+{
+  "[glsl]": {
+    "editor.defaultFormatter": "raczzalan.webgl-glsl-editor",
+    "editor.formatOnSave": true,
+    "editor.inlayHints.enabled": "offUnlessPressed"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+      "source.fixAll.eslint": "always"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+      "source.fixAll.eslint": "always"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+      "source.fixAll.eslint": "always"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+      "source.fixAll.eslint": "always"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json,pnpm-lock.yaml",
+    "*.ts": "${capture}.*.tsx, ${capture}.*.ts",
+    "*.tsx": "${capture}.*.tsx, ${capture}.*.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    ".editorconfig": ".node-version, .eslintrc.json, .markuplintrc, .prettierrc.json, commitlint.config.ts"
+  },
+  "eslint.enable": true,
+  "json.format.enable": false,
+  "prettier.enable": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
