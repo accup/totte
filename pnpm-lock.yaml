@@ -14,6 +14,9 @@ dependencies:
   '@vanilla-extract/css':
     specifier: ^1.14.1
     version: 1.14.1
+  '@vanilla-extract/recipes':
+    specifier: ^0.5.1
+    version: 0.5.1(@vanilla-extract/css@1.14.1)
   '@vanilla-extract/vite-plugin':
     specifier: ^4.0.4
     version: 4.0.4(@types/node@20.11.19)(vite@5.1.3)
@@ -4586,6 +4589,14 @@ packages:
 
   /@vanilla-extract/private@1.0.3:
     resolution: {integrity: sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==}
+    dev: false
+
+  /@vanilla-extract/recipes@0.5.1(@vanilla-extract/css@1.14.1):
+    resolution: {integrity: sha512-7dCuBgPQQ/89siQ0w2lkfjgkmToPUUDzFlHf5DRmt9ykiiycfA52tmPJ2RI/mr7jXi7U/vEN2aGP9QJSXEpGlA==}
+    peerDependencies:
+      '@vanilla-extract/css': ^1.0.0
+    dependencies:
+      '@vanilla-extract/css': 1.14.1
     dev: false
 
   /@vanilla-extract/vite-plugin@4.0.4(@types/node@20.11.19)(vite@5.1.3):
