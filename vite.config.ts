@@ -3,8 +3,13 @@ import react from "@vitejs/plugin-react";
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
 
-export default defineConfig({
-  plugins: [react(), vanillaExtractPlugin()],
+export default defineConfig(({ command }) => ({
+  plugins: [
+    react(),
+    vanillaExtractPlugin({
+      identifiers: ({ hash, packageName }) => `${packageName}_${hash}`,
+    }),
+  ],
   build: {
     lib: {
       entry: resolve(__dirname, "src", "index.ts"),
@@ -18,4 +23,4 @@ export default defineConfig({
       },
     },
   },
-});
+}));

@@ -24,8 +24,6 @@
 
     // Emit
 
-    "noEmit": true,
-
     // JavaScript Support
 
     "allowJs": false,
@@ -51,19 +49,13 @@
 
     // Projects
 
+    "composite": true,
+
     // Output Formatting
 
     // Completeness
 
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./tsconfig.storybook.json"
-    }
-  ]
+  "include": [".storybook/preview.tsx", "./src/style/**/*.ts"]
 }
