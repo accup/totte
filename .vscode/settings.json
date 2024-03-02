@@ -10,16 +10,16 @@
   },
   "[javascript]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "always",
-      "source.fixAll.eslint": "always"
+      "source.fixAll.eslint": "always",
+      "source.organizeImports": "always"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[javascriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "always",
-      "source.fixAll.eslint": "always"
+      "source.fixAll.eslint": "always",
+      "source.organizeImports": "always"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -34,29 +34,33 @@
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "always",
-      "source.fixAll.eslint": "always"
+      "source.fixAll.eslint": "always",
+      "source.organizeImports": "always"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[typescriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "always",
-      "source.fixAll.eslint": "always"
+      "source.fixAll.eslint": "always",
+      "source.organizeImports": "always"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "conventionalCommits.gitmoji": false,
+  "conventionalCommits.promptBody": false,
+  "conventionalCommits.promptFooter": false,
+  "conventionalCommits.promptScopes": false,
+  "eslint.enable": true,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
-    "package.json": "package-lock.json,pnpm-lock.yaml",
+    ".editorconfig": ".node-version, .eslintrc.json, .markuplintrc, .prettierrc.json, commitlint.config.ts",
     "*.ts": "${capture}.*.tsx, ${capture}.*.ts",
     "*.tsx": "${capture}.*.tsx, ${capture}.*.ts",
-    "tsconfig.json": "tsconfig.*.json",
-    ".editorconfig": ".node-version, .eslintrc.json, .markuplintrc, .prettierrc.json, commitlint.config.ts"
+    "package.json": "package-lock.json,pnpm-lock.yaml",
+    "tsconfig.json": "tsconfig.*.json"
   },
-  "eslint.enable": true,
   "json.format.enable": false,
   "prettier.enable": true,
   "typescript.tsdk": "node_modules/typescript/lib"
