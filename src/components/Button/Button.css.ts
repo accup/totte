@@ -1,11 +1,11 @@
 import { recipe } from "@vanilla-extract/recipes";
 
-import { colors } from "../style/color.css";
-import { reset } from "../style/reset.css";
+import { colors } from "../../styles/color.css";
+import { reset } from "../../styles/reset.css";
 
 export const container = recipe({
   base: [
-    reset,
+    reset(),
     {
       paddingBlock: 5,
       paddingInline: 10,

@@ -1,6 +1,6 @@
 import type { Meta } from "@storybook/react";
 
-import { colors } from "./style/color.css";
+import { colors } from "./styles/color.css";
 
 type Props = {
   color: string;

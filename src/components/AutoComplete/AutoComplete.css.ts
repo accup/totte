@@ -1,15 +1,19 @@
 import { recipe } from "@vanilla-extract/recipes";
 
-import { colors } from "../style/color.css";
-import { reset } from "../style/reset.css";
+import { colors } from "../../styles/color.css";
+import { reset } from "../../styles/reset.css";
+
+export const container = recipe({
+  base: [reset()],
+});
 
 export const input = recipe({
-  base: [reset],
+  base: [reset()],
 });
 
 export const suggestList = recipe({
   base: [
-    reset,
+    reset(),
     {
       border: "1px solid #000",
     },
@@ -18,7 +22,7 @@ export const suggestList = recipe({
 
 export const suggestItem = recipe({
   base: [
-    reset,
+    reset(),
     {
       ":hover": {
         color: colors.contrast,
@@ -30,7 +34,7 @@ export const suggestItem = recipe({
 
 export const suggestButton = recipe({
   base: [
-    reset,
+    reset(),
     {
       inlineSize: "100%",
     },

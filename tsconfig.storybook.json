@@ -57,9 +57,5 @@
 
     "skipLibCheck": true
   },
-  "include": [
-    ".storybook/preview.tsx",
-    "./src/index.css.ts",
-    "./src/style/**/*.ts"
-  ]
+  "include": [".storybook/preview.tsx", "./src/styles/**/*.ts"]
 }

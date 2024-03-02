@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import type { DistributiveProps } from "../types/props";
+import type { DistributiveProps } from "../../utils/type/props";
 
 import * as styles from "./Button.css";
 
