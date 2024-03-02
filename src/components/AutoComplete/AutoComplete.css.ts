@@ -8,7 +8,12 @@ export const container = recipe({
 });
 
 export const input = recipe({
-  base: [reset()],
+  base: [
+    reset(),
+    {
+      inlineSize: "fit-content",
+    },
+  ],
 });
 
 export const suggestList = recipe({
@@ -17,7 +22,19 @@ export const suggestList = recipe({
     {
       border: "1px solid #000",
     },
+    {
+      overflow: "auto",
+    },
   ],
+  variants: {
+    blockSize: {
+      medium: [
+        {
+          blockSize: "20lh",
+        },
+      ],
+    },
+  },
 });
 
 export const suggestItem = recipe({
